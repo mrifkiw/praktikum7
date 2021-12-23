@@ -21,9 +21,23 @@ window.onload = function () {
     }
 }
 
+function toggleDarkmode() {
+    var styleBody = document.body;
+    var btnDark = document.getElementById("btn-result");
+
+    if (btnDark.className === 'btn-result') {
+        document.getElementById("darkmode").innerHTML = "🌒";
+    } else {
+        document.getElementById("darkmode").innerHTML = "🌕";
+    }
+    styleBody.classList.toggle("toggle-darkmode");
+    btnDark.classList.toggle('btn-result-dark');
+
+}
+
 function getResult() {
     if (prov.value != "" && cities.value != "") {
-        document.getElementById("result").innerHTML = "Saya dari provinsi " + prov.value + ", Kabupaten/Kota " + cities.value;
+        document.getElementById("result").innerHTML = "Andi berasal dari Provinsi " + prov.value + ", Kabupaten " + cities.value;
     } else {
         alert("Alamat harus lengkap")
     }

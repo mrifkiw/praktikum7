@@ -8,17 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Alamat</h1>
+    <div class="title-bar">
+        <h1 class="title">Dimanakah alamat Andi? 🙇🏻 </h1>
+        <button class="btn-darkmode" onclick="toggleDarkmode()">
+            <div id="darkmode">🌙</div>
+        </button>
+    </div>
     <div class="dropdowns">
         <h3>Provinsi</h3>
-        <select name="provice" id="province">
+        <select name="provice" id="province" class="dropdown-item">
             <option value="" selected="selected">Pilih Provinsi</option>
         </select>
         <h3>Kota</h3>
-        <select name="city" id="city">
+        <select name="city" id="city" class="dropdown-item">
             <option value="" selected="selected">Pilih Kota</option>
         </select>
-        <button type="submit" onclick="getResult()" class="btn-result">Get Result</button>
+        <button id="btn-result" type="submit" onclick="getResult()" class="btn-result">Get Result</button>
         <h3 id="result"></h3>
     </div>
     
