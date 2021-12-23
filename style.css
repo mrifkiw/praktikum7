@@ -1,0 +1,13 @@
+.dropdowns {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.btn-result {
+    margin-top: 10px;
+    width: 30%;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
